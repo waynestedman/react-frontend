@@ -1,0 +1,21 @@
+/* Main style sheet */
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 14%);
+  margin: 0;
+  text-align: center;
+}
