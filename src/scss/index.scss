@@ -1,5 +1,41 @@
 /* Main style sheet */
 :root {
+  --radius01: 8px;
+  --radius02: 50px;
+  --radius03: 18px;
+  --teal01: #00e6d6;
+  --teal02: #9dfffd;
+  --teal03: #00998f;
+  --indigo01: #152a47;
+  --indigo02: #6c90e6;
+  --white: #ffffff;
+  --black: #000000;
+  --gray01: #c7c7c7;
+  --gray02: #eeeeee;
+  --gray03: #212121;
+  --error: #be3455;
+  --raleway: Raleway;
+  --montserrat: Montserrat;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --h1: 38px;
+  --h2: 34px;
+  --h3: 30px;
+  --h4: 26px;
+  --h5: 22px;
+  --h6: 18px;
+  --subtitle: 14px;
+  --p: 16px;
+  --button: 14px;
+  --caption: 12px;
+  --warning: #ed6c02;
+  --success: #2e7d32;
+  --info: #0288d1;
+  --danger: #d32f2f;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,4 +54,20 @@ body {
   color: hsl(0, 0%, 14%);
   margin: 0;
   text-align: center;
+}
+
+h1 {
+  color: var(--error);
+}
+
+h2 {
+  color: var(--teal03);
+}
+
+h3 {
+  color: var(--indigo01);
+}
+
+p {
+  color: var(--success);
 }

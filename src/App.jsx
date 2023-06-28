@@ -28,7 +28,7 @@ function App() {
           {posts.map((post) => (
             <div key={post.id} className='post'>
               <h3>{post.title.rendered}</h3>
-              {post.excerpt.rendered}
+              <p>{post.excerpt.rendered}</p>
             </div>
           ))}
         </div>
