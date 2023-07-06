@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react'
-// import Blog from './BlogPost';
+import parse from 'html-react-parser'; // To parse the HTML from the API
 
 function App() {
   const [posts, setPost] = useState([])
@@ -28,7 +28,7 @@ function App() {
           {posts.map((post) => (
             <div key={post.id} className='post'>
               <h3>{post.title.rendered}</h3>
-              <p>{post.excerpt.rendered}</p>
+              {parse(post.content.rendered)}
             </div>
           ))}
         </div>
